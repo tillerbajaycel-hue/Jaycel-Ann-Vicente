@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport.jpg" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaycel Ann Vicente | Personal Portfolio</title>
 
     <style>
@@ -16,15 +16,25 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            background: #f5f3ff;
+            background: #f8f5f5;
             color: #333;
         }
 
         header {
-            background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+            background: linear-gradient(135deg, #800000, #a52a2a);
             color: white;
             text-align: center;
             padding: 70px 20px;
+        }
+
+        /* PROFILE PICTURE */
+        .profile-picture {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 20px;
         }
 
         header h1 {
@@ -37,7 +47,7 @@
         }
 
         nav {
-            background: #2d2a4a;
+            background: #4d0000;
             text-align: center;
             padding: 15px;
             position: sticky;
@@ -53,7 +63,7 @@
         }
 
         nav a:hover {
-            color: #a29bfe;
+            color: #ffcccc;
         }
 
         section {
@@ -64,7 +74,7 @@
 
         section h2 {
             text-align: center;
-            color: #6c5ce7;
+            color: #800000;
             margin-bottom: 30px;
             font-size: 32px;
         }
@@ -85,12 +95,13 @@
             background: white;
             padding: 25px;
             border-radius: 15px;
+            border-left: 5px solid #800000;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             text-align: center;
         }
 
         .card h3 {
-            color: #6c5ce7;
+            color: #800000;
             margin-bottom: 10px;
         }
 
@@ -107,7 +118,7 @@
         }
 
         .project h3 {
-            color: #6c5ce7;
+            color: #800000;
             margin-bottom: 10px;
         }
 
@@ -121,7 +132,7 @@
         }
 
         footer {
-            background: #2d2a4a;
+            background: #4d0000;
             color: white;
             text-align: center;
             padding: 25px;
@@ -129,7 +140,7 @@
 
         .btn {
             display: inline-block;
-            background: #6c5ce7;
+            background: #800000;
             color: white;
             padding: 12px 25px;
             border-radius: 25px;
@@ -138,7 +149,18 @@
         }
 
         .btn:hover {
-            background: #4834d4;
+            background: #4d0000;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: block;
+                margin: 8px;
+            }
         }
     </style>
 </head>
@@ -147,9 +169,16 @@
 
     <!-- Header -->
     <header>
+
+        <!-- PROFILE PICTURE -->
+        <img src="jaycel.jpg"
+             alt="Photo of Jaycel Ann Vicente"
+             class="profile-picture">
+
         <h1>Hi, I'm Jaycel Ann Vicente</h1>
         <p>2nd Year Computer Science Student</p>
         <p>Catanduanes State University</p>
+
     </header>
 
     <!-- Navigation -->
@@ -173,6 +202,8 @@
                 taking Bachelor of Science in Computer Science at
                 <strong>Catanduanes State University</strong>.
             </p>
+
+            <br>
 
             <p>
                 I am passionate about learning technology, programming,
@@ -332,7 +363,7 @@
             <p>📱 Phone: 09657425567</p>
             <p>📍 Location: Catanduanes, Philippines</p>
 
-            <a href="mailto:your-email@example.com" class="btn">
+            <a href="mailto:tillerbajaycel@gmail.com" class="btn">
                 Contact Me
             </a>
         </div>
