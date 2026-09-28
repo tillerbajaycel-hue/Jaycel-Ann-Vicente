@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaycel Ann Vicente | Personal Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f5f3ff;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        nav {
+            background: #2d2a4a;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #a29bfe;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #6c5ce7;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        .about {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #6c5ce7;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        .project {
+            text-align: left;
+        }
+
+        .project h3 {
+            color: #6c5ce7;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 10px;
+            font-size: 18px;
+        }
+
+        footer {
+            background: #2d2a4a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #6c5ce7;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background: #4834d4;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Hi, I'm Jaycel Ann Vicente</h1>
+        <p>2nd Year Computer Science Student</p>
+        <p>Catanduanes State University</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#skills">Skills</a>
+        <a href="#interests">Interests</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Me -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <div class="about">
+            <p>
+                Hello! My name is <strong>Jaycel Ann Vicente</strong>.
+                I am 19 years old and currently a 2nd year college student
+                taking Bachelor of Science in Computer Science at
+                <strong>Catanduanes State University</strong>.
+            </p>
+
+            <p>
+                I am passionate about learning technology, programming,
+                and creating useful and creative digital projects.
+                I enjoy exploring new ideas and improving my skills
+                as I continue my journey in Computer Science.
+            </p>
+        </div>
+
+        <div class="info">
+            <div class="card">
+                <h3>Age</h3>
+                <p>19 Years Old</p>
+            </div>
+
+            <div class="card">
+                <h3>University</h3>
+                <p>Catanduanes State University</p>
+            </div>
+
+            <div class="card">
+                <h3>Year Level</h3>
+                <p>2nd Year College</p>
+            </div>
+
+            <div class="card">
+                <h3>Course</h3>
+                <p>Computer Science</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies -->
+    <section id="hobbies">
+        <h2>My Hobbies</h2>
+
+        <div class="info">
+            <div class="card">
+                <h3>🎵 Listening to Music</h3>
+                <p>I enjoy listening to music during my free time.</p>
+            </div>
+
+            <div class="card">
+                <h3>🎮 Gaming</h3>
+                <p>I like playing games for entertainment and relaxation.</p>
+            </div>
+
+            <div class="card">
+                <h3>📺 Watching Movies</h3>
+                <p>I enjoy watching movies and discovering interesting stories.</p>
+            </div>
+
+            <div class="card">
+                <h3>💻 Coding</h3>
+                <p>I enjoy practicing programming and learning new technologies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="info">
+            <div class="card">
+                <h3>💻 Programming</h3>
+                <p>Basic programming and problem-solving</p>
+            </div>
+
+            <div class="card">
+                <h3>🌐 Web Development</h3>
+                <p>HTML, CSS, and basic JavaScript</p>
+            </div>
+
+            <div class="card">
+                <h3>🧠 Problem Solving</h3>
+                <p>Logical thinking and finding solutions to problems</p>
+            </div>
+
+            <div class="card">
+                <h3>🤝 Teamwork</h3>
+                <p>Working and communicating effectively with others</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests -->
+    <section id="interests">
+        <h2>My Interests</h2>
+
+        <div class="card">
+            <ul>
+                <li>💡 Technology and Innovation</li>
+                <li>💻 Programming and Software Development</li>
+                <li>🌐 Web Design</li>
+                <li>📱 New Technologies</li>
+                <li>🎨 Creative Digital Projects</li>
+                <li>📚 Learning New Things</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Fun Fact -->
+    <section>
+        <h2>Fun Fact About Me</h2>
+
+        <div class="card">
+            <h3>✨ Fun Fact!</h3>
+            <p>
+                I may be a Computer Science student, but I believe that
+                learning doesn't always have to happen inside the classroom.
+                I enjoy learning through personal projects, experimenting
+                with code, and discovering new things on my own.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="info">
+
+            <div class="card project">
+                <h3>Project 1: Personal Portfolio</h3>
+                <p>
+                    A personal website created using HTML and CSS
+                    to introduce myself, my skills, hobbies, and interests.
+                </p>
+            </div>
+
+            <div class="card project">
+                <h3>Project 2: Student Information System</h3>
+                <p>
+                    A simple concept for managing student information,
+                    including names, courses, and other student details.
+                </p>
+            </div>
+
+            <div class="card project">
+                <h3>Project 3: Simple Calculator</h3>
+                <p>
+                    A basic calculator project designed to perform
+                    common mathematical operations.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <div class="card contact">
+            <p>📧 Email: your-email@example.com</p>
+            <p>📱 Phone: 09657425567</p>
+            <p>📍 Location: Catanduanes, Philippines</p>
+
+            <a href="mailto:your-email@example.com" class="btn">
+                Contact Me
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Jaycel Ann Vicente. All Rights Reserved.</p>
+        <p>Made with ❤️ using HTML & CSS</p>
+    </footer>
+
+</body>
+</html>
