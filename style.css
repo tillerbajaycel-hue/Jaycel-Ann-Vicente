@@ -1,0 +1,178 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: #800000;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    background-color: #4d0000;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #ffcccc;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+section h2 {
+    text-align: center;
+    color: #800000;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.card {
+    background-color: white;
+    padding: 25px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border-left: 5px solid #800000;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: #800000;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   INFO / SKILLS / HOBBIES
+========================= */
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.info .card {
+    text-align: center;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    margin: 10px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+    display: inline-block;
+    background-color: #800000;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #4d0000;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #4d0000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px;
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 35px 15px;
+    }
+}
